@@ -1,0 +1,90 @@
+@mixin typography($font-size, $font-weight, $text-transform) {
+  font-size: $font-size;
+  font-weight: $font-weight;
+  text-transform: $text-transform;
+}
+
+@mixin font-regular() {
+  font-family: $font-family-sans-serif;
+}
+
+@mixin font-title() {
+  font-family: 'TradeGothicLTStd', Georgia;
+}
+
+@mixin font-header() {
+  font-family: 'TradeGothicLTStd-BdCn20', Georgia;
+}
+
+@mixin font-sub-header() {
+  font-family: 'TradeGothicLTStd-Light', Georgia;
+}
+
+@mixin font-banner-head() {
+  font-family: 'TradeGothicLTStd-BdCn20', Georgia;
+}
+
+@mixin txt-h0() {
+  @include font-header();
+  @include typography($font-size-xxlarge, $font-weight-regular, uppercase);
+}
+
+@mixin txt-ht() {
+  @include font-sub-header();
+  @include typography($font-size-x3large, $font-weight-regular, none);
+}
+
+@mixin txt-h1() {
+  @include font-header();
+  @include typography($font-size-xlarge, $font-weight-regular, uppercase);
+}
+
+@mixin txt-h2() {
+  @include font-sub-header();
+  @include typography($font-size-large, $font-weight-regular, none);
+}
+
+@mixin txt-h3() {
+  @include font-sub-header();
+  @include typography($font-size-base, $font-weight-regular, none);
+}
+
+@mixin txt-h4() {
+  @include font-sub-header();
+  @include typography($font-size-smaller, $font-weight-regular, none);
+}
+
+@mixin txt-l1() {
+  @include font-header();
+  @include typography($font-size-medium, $font-weight-regular, uppercase);
+}
+
+@mixin txt-l2() {
+  @include font-header();
+  @include typography($font-size-base, $font-weight-regular, uppercase);
+}
+
+@mixin txt-l3() {
+  @include font-header();
+  @include typography($font-size-small, $font-weight-regular, uppercase);
+}
+
+@mixin txt-bd0() {
+  @include font-regular();
+  @include typography($font-size-large, $font-weight-regular, none);
+}
+
+@mixin txt-bd1() {
+  @include font-regular();
+  @include typography($font-size-base, $font-weight-regular, none);
+}
+
+@mixin txt-bd2() {
+  @include font-regular();
+  @include typography($font-size-smaller, $font-weight-regular, none);
+}
+
+@mixin txt-bh() {
+  @include font-banner-head();
+  @include typography($font-size-xhuge, $font-weight-regular, none);
+}

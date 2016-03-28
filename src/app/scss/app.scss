@@ -1,0 +1,32 @@
+@import '_variable.scss';
+@import './mixins/_topolography.scss';
+@import 'topography.scss';
+@import '_utilities.scss';
+// @font-face {
+//   font-family: 'TradeGothicLTStd';
+//   src: url('../fonts/TradeGothicLTStd.woff') format('woff'), /* Modern Browsers */
+//   url('../fonts/TradeGothicLTStd.ttf') format('truetype'); /* Safari, Android, iOS */
+// }
+//
+// @font-face {
+//   font-family: 'TradeGothicLTStd-BdCn20';
+//   src: url('../fonts/TradeGothicLTStd-BdCn20.woff') format('woff'), /* Modern Browsers */
+//   url('../fonts/TradeGothicLTStd-BdCn20.ttf') format('truetype'); /* Safari, Android, iOS */
+// }
+//
+// @font-face {
+//   font-family: 'TradeGothicLTStd-Light';
+//   src: url('../fonts/TradeGothicLTStd-Light.woff') format('woff'), /* Modern Browsers */
+//   url('../fonts/TradeGothicLTStd-Light.ttf') format('truetype'); /* Safari, Android, iOS */
+// }
+
+html {
+  font-size: 62.5%;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+}
+
+body {
+  background: $body-bg;
+  color: $text-color;
+}
